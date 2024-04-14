@@ -1,0 +1,9 @@
+x <- c(210, 450, 50, 10, 50, 90)
+names(x) <- c("Algo", "DS", "Java", "C", "C++", "Python")
+
+barplot(x, names.arg = names(x), col = "darkgreen",
+        main = "Articles on GreekForGeeks",
+        xlab = "Programming Languages",
+        ylab = "Number of Articles")
+
+axis(side = 2, at = seq(0, 600, by = 100), labels = seq(0, 600, by = 100))

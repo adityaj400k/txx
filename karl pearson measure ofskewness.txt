@@ -1,0 +1,13 @@
+karson_skewness <- function(x) {
+  n <- length(x)
+  mean_x <- mean(x)
+  sd_x <- sd(x)
+  skewness_x <- sum((x - mean_x)^3) / (n * sd_x^3)
+  return(skewness_x)
+}
+
+set.seed(123)
+data <- rnorm(100)
+
+skewness_value <- karson_skewness(data)
+print(skewness_value)

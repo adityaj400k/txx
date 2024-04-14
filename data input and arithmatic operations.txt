@@ -1,0 +1,19 @@
+a <- c (1,0.1)
+b <- c (2.33,4)
+print(a+b)
+
+a <- 8
+b <- 6.4
+print(a-b)
+
+a <- 2
+b <- 2
+print(a*b)
+
+a <- 36
+b <- 3
+print(a/b)
+
+a <- 15
+b <- 6
+print(a%%b)

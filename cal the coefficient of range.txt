@@ -1,0 +1,6 @@
+data <- c(10, 5, 8, 15, 7)
+range_value <- max(data) - min(data)
+cat("Range:", range_value, "\n")
+
+coefficient_of_range <- range_value / (max(data) + min(data))  
+cat("Coefficient of range:", coefficient_of_range, "\n")

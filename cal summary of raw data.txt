@@ -1,0 +1,10 @@
+class_intervals <- c(0, 10, 30, 40, 50)
+frequencies <- c(15, 20, 25, 18, 12)
+
+summary_stats <- data.frame(
+  class_intervals = c(class_intervals[-length(class_intervals)], NA),
+  frequency = frequencies,
+  cumulative_frequency = cumsum(frequencies)
+)
+
+print(summary_stats)

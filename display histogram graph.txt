@@ -1,0 +1,8 @@
+data <- rnorm(100, mean = 50, sd = 10)
+
+hist(data, main = "Histogram of random data",
+     xlab = "Data values", col = "darkgreen")
+
+lines(density(data), col = "blue", lwd = 2)
+
+rug(data, col = "red")

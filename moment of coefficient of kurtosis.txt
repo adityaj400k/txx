@@ -1,0 +1,11 @@
+install.packages("moments")
+library(moments)
+
+data <- c(2, 4, 6, 8, 10)
+mean_value <- mean(data)
+variance_sample <- var(data)
+n <- length(data)
+moment_4 <- sum((data - mean_value)^4) / n
+kurtosis_rel <- moment_4 / (variance_sample^2)
+
+print(kurtosis_rel)

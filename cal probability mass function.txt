@@ -1,0 +1,4 @@
+pmf <- dbinom(x = 14, size = 20, prob = 0.7)
+print(pmf)
+pmf <- dbinom(x = 8, size = 20, prob = 0.9)
+print(pmf)

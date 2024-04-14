@@ -1,0 +1,9 @@
+# Creating a data frame
+friend_data <- data.frame(
+  friend_id = c(1:5),
+  friend_name = c("sachin", "rahul", "rohit", "virat", "Aditya"),
+  stringsAsFactors = FALSE
+)
+
+# Using str() to inspect the structure of the data frame
+print(str(friend_data))

@@ -1,0 +1,9 @@
+x <- c(12, 23, 43, 56, 80, 24)
+y <- c(24, 56, 68, 24, 42, 28)
+correlation <- cor(x, y)
+print(correlation)
+
+x <- c(1, 2, 3, 4, 5)
+y <- c(2, 3, 4, 5, 6)
+correlation <- cor(x, y)
+cat("Pearson correlation coefficient: ", correlation, "\n")

@@ -1,0 +1,6 @@
+install.packages("moments")
+library(moments)
+data <- c(1, 2, 3, 4, 5)
+axcess_kurtosis <- kurtosis(data)
+abs_kurtosis <- kurtosis(data, na.rm = TRUE)
+print(abs_kurtosis)

@@ -1,0 +1,7 @@
+df <- data.frame(x = c(1, 3, 45, 5, 18, 22, 25))
+
+fertile_deviation <- max(df$x, na.rm = TRUE) - min(df$x, na.rm = TRUE)
+coefficient_of_fertile_deviation <- fertile_deviation / mean(df$x, na.rm = TRUE)
+
+cat("fertile deviation:",fertile_deviation,"\n")
+cat("Coefficient of fertile deviation:", coefficient_of_fertile_deviation, "\n")

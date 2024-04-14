@@ -1,0 +1,14 @@
+matrix = matrix(c(1,2,3,4,5,6),nrow = 3, ncol = 2)
+print(matrix)
+
+seq_vect <- seq(1,4, by = 0.5)
+seq_vect
+class(seq_vect)
+
+seq_vect <- seq(1,4, by = 6)
+seq_vect
+class(seq_vect)
+
+seq_vect <-seq(1,4, by = 0.5)
+seq_vect
+class(seq_vect)

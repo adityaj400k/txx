@@ -1,0 +1,8 @@
+#creating a data frame
+friend.data <- data.frame(
+  friend_id = c(1.5),
+  friend_name = c("sachin","rahul","rohit","virat","Aditya"),
+  stringASFactors = FALSE
+)
+#printing the data.frame
+print(friend.data)

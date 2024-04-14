@@ -1,0 +1,23 @@
+class_intervals <- c(0, 10, 20, 30, 40)
+frequencies <- c(15, 20, 18, 12)
+
+midpoints <- (class_intervals[-1] + class_intervals[-length(class_intervals)]) / 2
+
+class_width <- diff(class_intervals)
+
+cumulative_frequency <- cumsum(frequencies)
+
+relative_frequency <- frequencies / sum(frequencies)
+
+cumulative_relative_frequency <- cumsum(relative_frequency)
+
+summary_stats <- data.frame(
+  Class_Interval = class_intervals[-length(class_intervals)],
+  Midpoint = midpoints,
+  Frequency = frequencies,
+  Cumulative_Frequency = cumulative_frequency,
+  Relative_Frequency = relative_frequency,
+  Cumulative_Relative_Frequency = cumulative_relative_frequency
+)
+
+print(summary_stats)

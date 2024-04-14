@@ -1,0 +1,15 @@
+products <- data.frame(
+  Product_Id = c(101, 102, 103),
+  Product_Name = c("T-Shirt", "Jeans", "Shoes"),
+  Price = c(15.99, 29.99, 49.99),
+  Stock = c(50, 30, 25)
+)
+
+cat("Existing dataframe (Products):\n")
+print(products)
+
+new_product <- c(104, "Sunglasses", 39.99, 40)
+products <- rbind(products, new_product)
+
+cat("\nUpdated dataframe after adding the new product:\n")
+print(products)

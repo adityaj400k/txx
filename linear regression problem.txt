@@ -1,0 +1,5 @@
+study_hours <- c(5, 7, 3, 8, 6)
+exam_scores <- c(80, 85, 60, 90, 78)
+data <- data.frame(study_hours, exam_scores)
+regression.model <- lm(exam_scores ~ study_hours, data = data)
+print(summary(regression.model))

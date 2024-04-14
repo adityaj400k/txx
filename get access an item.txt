@@ -1,0 +1,15 @@
+# Creating a data frame
+friend_data <- data.frame(
+  friend_id = c(1:5),
+  friend_name = c("sachin", "rahul", "rohit", "virat", "Aditya"),
+  stringsAsFactors = FALSE
+)
+
+# getting first column
+print(friend_data[1])
+
+# getting  'friend_name' wala column using double brackets
+print(friend_data[['friend_name']])
+
+# getting  'friend_id' wala column using this -> $ symbol
+print(friend_data$friend_id)

@@ -1,0 +1,10 @@
+x <- c(0, 2)
+px <- c(0.3, 0.5, 0.2)
+pdf_x <- px / sum(px)
+cat('pdf of x:\n')
+print(pdf_x)
+
+x <- 1.5
+pre <- c(0.2, 0.3, 0.1, 0.2, 0.2)
+pdf_x <- pre / sum(pre)
+print(pdf_x)
