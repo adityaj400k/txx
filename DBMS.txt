@@ -1,0 +1,119 @@
+show databases;
+
+CREATE DATABASE student_info;
+
+SHOW DATABASES;
+
+use student_info;
+
+CREATE TABLE student (ID int(10), Name varchar(20), Course varchar(20));
+
+DESC student;
+
+INSERT INTO student VALUES (1, 'Aditya', 'C');
+
+INSERT INTO student VALUES (2, 'Anil', 'CS');
+
+INSERT INTO student VALUES (3, 'Keshavan', 'CS');
+
+INSERT INTO student VALUES (4, 'jitu', 'IT');
+
+INSERT INTO student VALUES (5, 'swapnil', 'IT');
+
+INSERT INTO student VALUES (6, 'Mridul', 'IT');
+
+SELECT * FROM student;
+
+SELECT Name FROM student;
+
+--ADD
+ALTER TABLE student
+ADD Roll_no INT(10);
+
+SELECT * FROM student;
+
+--DROP
+--column only delete
+ALTER TABLE student
+drop column ID;
+
+SELECT * FROM student;
+
+--whole table delete
+drop table student;
+SELECT * FROM student;
+
+--Rename
+ALTER TABLE student RENAME TO student_info;
+desc student_info;
+
+--Truncate--used to delete record
+truncate table student;
+SELECT * FROM student;
+---------------------------------------------
+#Aggregate function
+--count()
+select count(ID) as Total_ID from student;
+
+--MAX
+select max(ID) as MAX_ID from student;
+
+--MIN()
+select min(ID) as MIN_ID from student;
+
+--SUM()
+select sum(ID) as Total_ID from student;
+
+--Avg()
+select avg(ID) as Average_ID from student;
+------------------------------------------------------
+#Date function
+--curdate()
+select curdate() as 'current_date';
+
+--curtime()
+select curtime() as 'current_time';
+
+--NOW()
+select now() as 'currentdate and time';
+
+--extract year
+select extract(year from '2024-09-12') as years;
+
+--datediff()
+select datediff('2024-03-6','2006-03-6') as datediff;
+-----------------------------------------------------------
+
+#math function
+--Absolute
+select ABS(-12.9) as absolute;
+select ABS(12.9) as absolute;
+
+--Round
+select Round(12.9) as Round;
+
+--squareroot
+select SQRT(16) as squareroot;
+
+--power
+select power(4,2) as power;
+
+--module
+select MOD(10.2, 3) AS mod_result;
+
+--------------------------------------------------
+#string
+--LENGTH
+select LENGTH("ADITYA") as length;
+
+--Right
+select RIGHT("ADITYA",2) as Rightstring;
+
+--left
+select LEFT("ADITYA",2) as leftstring;
+
+--upper
+select UPPER("aditya") as uppercase;
+
+--Lower
+select LOWER("ADITYA") as lowercase;
